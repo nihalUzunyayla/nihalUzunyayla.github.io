@@ -1,1 +1,0 @@
-# nihalUzunyayla.github.io
