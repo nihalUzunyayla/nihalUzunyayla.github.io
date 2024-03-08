@@ -1,0 +1,70 @@
+.advertisement
+{
+	width:100px;
+	height:150px; 
+	border-color:black;
+	border-width:2px; 
+	background-color:gray; 
+	color:white;
+	top: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	position: absolute;
+}
+.header {
+	position: relative;
+	width: 70%;
+	left: 13%;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+
+}
+.content {
+	width: 70%;
+	margin:auto;
+	margin-top:30px;
+	text-align: justify;
+	
+}
+.main {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: medium;
+}
+.title{
+	float:right;
+	position:relative;
+	margin-right:225px;
+	padding-left:40px;
+}
+.logo img {
+	float: left;
+	position: relative;
+	width: 250px;
+	height:100px;
+}
+.image img {
+	width: 250px;
+	height: 200px;
+	float: left;
+	padding-right: 10px;
+	padding-bottom:10px;
+}
+.head {
+	float: left;
+	margin-top: 20px;
+	position: relative;
+	text-align: center;
+	margin-left: 45%;
+}
+h2 {
+    color: rgb(21, 119, 158);
+    margin-left: 15%;
+}
+.link {
+	float: left;
+	
+	position: relative;
+	text-align: center;
+	margin-left: 48%;
+}
