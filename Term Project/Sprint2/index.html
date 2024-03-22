@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYBU Healthy Lifestyle and Nutrition Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="AYBU" class="logo-img">
+        </div>
+        <h1>AYBU Healthy Lifestyle and Nutrition Club</h1>
+        <!-- navigation bar -->
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="events.html">Events</a> |
+            <a href="nutrition.html">Nutrition and Health</a> |
+            <a href="membership.html">Membership</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="search" class="search-button">SEARCH</button>
+        </div>
+    </header>
+    
+
+    <main>
+        <h2>Welcome to AYBU Healthy Lifestyle and Nutrition Club</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/slide1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/slide2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/slide3.jpg" style="width:100%">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- Add more content here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AYBU Healthy Lifestyle and Nutrition Club. All rights reserved. <br> Ayvalı Mah. Gazze Cad. No: 7
+            Etlik-Keçiören / Ankara - Tel : +90 312 906 1000 - Fax : +90 312 906 2950 - E-mail : basin@aybu.edu.tr</p>    </footer>
+
+            <!--For now, we added this script just to show the slide feature. It will be arranged later according to need.-->
+            <script>
+                var slideIndex = 0;
+                showSlides();
+            
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    
+                    // Hide all slides
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    
+                    // Increment slide index
+                    slideIndex++;
+                    
+                    // Reset slide index if it exceeds the number of slides
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+                    
+                    // Display the current slide
+                    slides[slideIndex - 1].style.display = "block";
+                    
+                    // Call showSlides function recursively after 3 seconds
+                    setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+            </script>
+</body>
+</html>
