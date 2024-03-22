@@ -1,0 +1,32 @@
+.form-group {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+label {
+    margin-right: 10px;
+    width: 80px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="email"],
+select,
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    margin-left: 90px;
+}
