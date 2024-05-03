@@ -1,0 +1,66 @@
+﻿.form {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+label {
+    margin-right: 50px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+[type="email"],
+[type="url"] {
+    padding: 2px;
+    width: 250px;
+    height: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+
+.ui-datepicker {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.ui-datepicker-header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+
+.ui-datepicker-calendar {
+    background-color: white; 
+}
+
+.ui-datepicker-calendar td a.ui-state-default {
+    color: black;
+}
+
+.ui-datepicker-calendar td a.ui-state-highlight {
+    background-color: #ff9999;
+}
+
+.ui-datepicker-calendar td a.ui-state-active {
+    background-color: #ff6666; 
+}
+
+.ui-autocomplete {
+    overflow-y: auto;
+    background-color: white;
+}
+
+.ui-autocomplete.ui-widget-content a {
+    color: black;
+}
+
+.ui-autocomplete.ui-widget-content .ui-state-focus,
+.ui-autocomplete.ui-widget-content .ui-state-active {
+    background-color: #ff9999;
+}
