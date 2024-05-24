@@ -1,0 +1,474 @@
+/* styles.css */
+
+/* Reset CSS to remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+button,
+input,
+select,
+optgroup,
+option,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+/* Ensuring all elements inherit box-sizing property */
+html {
+    box-sizing: border-box;
+}
+
+/* Ensuring all elements and pseudo-elements inherit box-sizing property */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-y: scroll; /* Always show vertical scrollbar */
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    line-height: 1.6; /* Set line height for better readability */
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+header {
+    background-color: #04c98e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for the club logo */
+.logo {
+    float: left; /* Float logo to the left */
+}
+
+.logo-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;  /* Add rounded corners */
+    margin-left: 20%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Styles for navigation menu */
+nav {
+    margin-top: 20px;
+}
+
+/* Styles for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/* Hover styles for navigation links */
+nav a:hover {
+    background-color: #04c98e; /* Change background color on hover */
+    border-radius: 3px; /* Add rounded corners on hover */
+}
+
+/* Styling for search bar */
+.search-bar {
+    margin-top: 20px;
+    width: 80%;
+    padding-left: 30%;
+}
+/* Styling for search input */
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: auto; /* Align footer to the bottom */
+    background-color: #7d827e;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Search button */
+.search-button {
+    padding: 10px 20px;
+    background-color: #26a365;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background-color: #1c7f4f;
+}
+
+/* Submit button */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #26a365;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #1c7f4f;
+}
+
+/* Event Cards */
+.event {
+    display: inline-block;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow effect */
+    border-radius: 30px;
+    overflow: hidden; /* Hiding overflowing content */
+    cursor: pointer; /* Changing cursor to pointer on hover */
+}
+
+.event img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 30px;
+    transition: transform 0.3s; /* Adding smooth transition effect */
+
+}
+
+.event-name {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+.event:hover {
+    transform: scale(1.1); /* Scaling up on hover */
+}
+
+.event:hover .event-name {
+    display: block; /* Showing event name on hover */
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none; /* Removing default list styles */
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none; /* Removing underline from links */
+    color: #333;
+    padding: 5px 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    border-color: #26a365;
+}
+
+.menu ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Additional Styles */
+.additional-info {
+    margin-top: 20px;
+}
+
+.additional-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.additional-info ul {
+    list-style-type: none;
+}
+
+.additional-info ul li {
+    margin-bottom: 5px;
+}
+
+.social-media a {
+    color: #068b39;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underlining social media links on hover */
+}
+
+
+/* bxSlider styles */
+.bx-wrapper {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.bxslider img {
+    width: 100%; 
+    height: auto; 
+}
+
+.checkbox-container {
+    display: flex; 
+    align-items: center; 
+    margin-left: 30%
+}
+
+.checkbox-label {
+    flex: 1; 
+    margin-left: -250px; 
+}
+
+.ui-datepicker {
+    background-color: #fff;
+}
+
+.ui-state-highlight {
+    background-color: #26a365;
+    color: #fff; 
+}
+
+.ui-datepicker-header {
+    background-color: #04c98e; 
+    color: #fff;
+    font-weight: bold;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    background-color: #04c98e;
+    color: #fff;
+}
+
+/* Autocomplete dropdown style */
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 0;
+    z-index: 1000; 
+}
+
+/* Autocomplete dropdown item style */
+.ui-autocomplete li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for autocomplete dropdown item */
+.ui-autocomplete li:hover {
+    background-color: #04c98e;
+    color: white;
+}
+
+#password,
+#repeat-password {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+#nextButton {
+    padding: 10px 20px;
+    background-color: #26a365;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#prevButton {
+    padding: 10px 20px;
+    background-color: #26a365;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tip-card {
+    position: relative; 
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    max-height: 200px;
+    overflow: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    border: 2px solid #26a365;
+}
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.tip-title {
+    font-size: 24px;
+    color: #083e08;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 4px rgba(112, 205, 105, 0.2);
+    text-align: center;
+}
+
+.tip-description {
+    font-size: 18px;
+    color: #6c757d;
+    font-family: "Arial", sans-serif;
+}
+
+/* Add styles for recipe cards */
+.recipe-card {
+    display: inline-block;
+    width: calc(50% - 20px); /* Set the width of each card, minus margin */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #26a365; /* Change border color and increase thickness */
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-card h3 {
+    margin-top: 10px;
+}
+
+.recipe-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Two-column layout for recipe cards */
+@media (min-width: 768px) {
+    #recipe-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .recipe-card {
+        width: 100%; /* Each card takes full width within a column */
+    }
+}
+

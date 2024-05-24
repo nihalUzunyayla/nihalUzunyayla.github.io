@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - AYBU Healthy Lifestyle and Nutrition Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.3.custom/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/additional-methods.min.js"></script>
+    <script src="membership.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="AYBU" class="logo-img">
+        </div>
+        <h1>AYBU Healthy Lifestyle and Nutrition Club</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="events.html">Events</a> |
+            <a href="nutrition.html">Nutrition and Health</a> |
+            <a href="membership.html">Membership</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="search" class="search-button">SEARCH</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Membership</h2>
+        <p>Become a member of AYBU Healthy Lifestyle and Nutrition Club today and enjoy exclusive benefits such as:</p>
+        <!-- List of benefits -->
+        <ul>
+            <li>Access to nutrition workshops and seminars</li>
+            <li>Discounts on fitness classes and events</li>
+            <li>Monthly newsletters with health tips and recipes</li>
+        </ul>
+        <!-- Membership Signup Form -->
+        <p>To sign up for membership, please fill out the form below:</p>
+        <form id="membership-form" action="#" method="post">
+            
+            <!-- Name input field -->
+            <label for="name">User Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <!-- Email input field with autocomplete -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="background-color: white;"><br><br>
+
+            <!-- Password input field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="password-error" class="error"></span><br><br>
+
+            <!-- Repeat Password input field -->
+            <label for="repeat-password">Repeat Password:</label>
+            <input type="password" id="repeat-password" name="repeat-password" required>
+            <span id="repeat-password-error" class="error"></span><br><br>
+
+            <!-- Checkbox for student -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="student" name="student">
+                <label for="student" class="checkbox-label">I am currently a student at AYBU</label><br><br>
+            </div>
+
+            <!-- School Registration Date with datepicker -->
+            <label for="registrationDate">School Registration Date:</label>
+            <input type="text" id="registrationDate" name="registrationDate" required disabled><br><br>
+
+            <!-- Submit button -->
+            <button type="submit" class="submit-button">SUBMIT</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AYBU Healthy Lifestyle and Nutrition Club. All rights reserved. <br> Ayvalı Mah. Gazze Cad. No: 7
+            Etlik-Keçiören / Ankara - Tel : +90 312 906 1000 - Fax : +90 312 906 2950 - E-mail : basin@aybu.edu.tr</p>
+    </footer>
+   
+</body>
+</html>
